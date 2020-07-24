@@ -1,0 +1,233 @@
+<style>
+		
+	@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,700;1,400&display=swap');
+
+	
+	* {
+		margin: 0;
+		padding: 0;
+	}
+	
+	html, body {
+		height: 100%;
+	}
+	
+	.content {
+		  max-width: 700px;
+		  margin: auto;
+		  padding: 10px 0 !important;
+		  min-height: 50%;
+	}
+	
+	.text {
+		font-family: 'Lato', sans-serif;
+		font-size: 24px;
+		margin: 30px auto 0px auto;
+		color: #071330 !important;
+		
+	}
+	
+	label {
+		font-family: 'Lato', sans-serif;
+		font-size: 24px;
+		margin: 10px auto;
+		color: #071330 !important;
+		display: inline-block !important;
+		width: 320px !important;
+	}
+	
+	body {
+		font-family: 'Lato', sans-serif;
+		font-size: 16px;
+		background: #738FA7 !important;
+	}	
+	
+	h2::after {
+	 	content: "";
+	 	display: block;
+	 	margin: 23px auto;
+	 	width: 200px;
+	 	height: 5px;
+	 	background: #071330 !important;
+	 }
+	 
+	 input[type=submit] {
+		background: #0C4160 !important;
+		font-family: 'Lato', sans-serif;
+		font-size: 18px;
+		padding: 5px 7px !important;
+		text-align: center;
+		border: 1px solid white;
+  		border-radius: 4px;
+  		margin: 30px 100px;
+  		border-color: white !important;
+  		color: white !important;;
+	}
+	
+	
+	table, th, td {
+		border: 1px solid black;
+		background-color: #C3CEDA !important;
+ 		margin:  auto; 
+		padding: 7px 7px;
+		text-align: center;
+		font-family: 'Lato', sans-serif;
+		font-size: 18px;
+	}
+	
+	select {
+		background-color: #C3CEDA !important;
+		margin: 10px auto;
+		padding: 7px 7px;
+		font-family: 'Lato', sans-serif;
+		font-size: 18px;
+	}
+	
+	input[type=checkbox] {
+		background: #0C4160 !important;
+		font-family: 'Lato', sans-serif;
+		size: 24px;
+		padding: 5px 7px !important;
+		text-align: center;
+/*   		margin: 30px 100px; */
+  		color: #071330 !important;;
+	}
+	
+	a {
+ 		color: #071330 !important;
+ 		font-family: 'Lato', sans-serif;
+		font-size: 24px;
+	}
+	
+	a:hover {
+		color: #0C4160 !important;
+	}
+	
+	.poruka {
+		font-family: 'Lato', sans-serif;
+		font-size: 24px;
+		margin: auto
+		color: #071330 !important;
+	}
+	
+	#link {
+		font-family: 'Lato', sans-serif;
+		font-size: 18px;
+		color: #071330 !important;
+	}
+	
+	#link:hover {
+		color: #0C4160 !important;
+	}
+	
+	/* 	-------------------Navigacija--------------------- */
+	.primary-color {
+    background-color: #0C4160 !important;
+	}
+	.navbar-brand {
+		font-size: 2rem;
+		letter-spacing: 1.7px;
+		color: white !important;
+	}
+	.navbar-brand:hover {
+		color: #C3CEDA !important;
+		transition: .4s ease;
+	}
+	.navbar .navbar-nav .nav-link {
+		padding-left: 30px;
+		font-size: 1.3rem;
+		color: white !important;
+	}
+	.navbar .navbar-nav .nav-link:hover {
+		color: #C3CEDA !important;
+		transition: .4s ease;
+	}
+	
+	/* 	-------------------Jumbotron--------------------- */
+	.cover {
+		background-image: url(/Fakultet/img/naslovna2.jpg);
+		background-position: center;
+		background-size: cover;
+		border-radius: 0 !important;
+		padding: 200px 0;
+		margin-bottom: 0;
+	}
+	
+	.header {
+		padding: 30px 0;
+		margin-bottom: 0;
+		color: #EEEDE7 !important;
+		font-family: 'Lato', sans-serif;
+		background: #738FA7 !important;
+	}
+	
+	/* 	------------------- Checkbox --------------------- */
+	.container2 {
+	  display: block;
+	  position: relative;
+	  padding-left: 35px;
+	  margin-bottom: 12px;
+	  cursor: pointer;
+	  font-size: 22px;
+	  -webkit-user-select: none;
+	  -moz-user-select: none;
+	  -ms-user-select: none;
+	  user-select: none;
+	}
+	
+	/* Hide the browser's default checkbox */
+	.container2 input {
+	  position: absolute;
+	  opacity: 0;
+	  cursor: pointer;
+	  height: 0;
+	  width: 0;
+	}
+	
+	/* Create a custom checkbox */
+	.checkmark {
+	  position: absolute;
+	  top: 0;
+	  left: 0;
+	  height: 25px;
+	  width: 25px;
+	  background-color: #C3CEDA !important;
+	}
+	
+	/* On mouse-over, add a grey background color */
+	.container2:hover input ~ .checkmark {
+	  background-color: #ccc;
+	}
+	
+	/* When the checkbox is checked, add a blue background */
+	.container2 input:checked ~ .checkmark {
+	  background-color: #0C4160 !important;
+	}
+	
+	/* Create the checkmark/indicator (hidden when not checked) */
+	.checkmark:after {
+	  content: "";
+	  position: absolute;
+	  display: none;
+	}
+	
+	/* Show the checkmark when checked */
+	.container2 input:checked ~ .checkmark:after {
+	  display: block;
+	}
+	
+	/* Style the checkmark/indicator */
+	.container2 .checkmark:after {
+	  left: 9px;
+	  top: 5px;
+	  width: 5px;
+	  height: 10px;
+	  border: solid white;
+	  border-width: 0 3px 3px 0;
+	  -webkit-transform: rotate(45deg);
+	  -ms-transform: rotate(45deg);
+	  transform: rotate(45deg);
+	}
+
+		
+</style>
